@@ -15,6 +15,7 @@ class EegDataset:
     channel_names: list
     raw_data_path: str 
     interim_data_path: str 
+    metadata_path: str
 
     
 
