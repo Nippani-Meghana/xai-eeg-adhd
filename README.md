@@ -4,15 +4,6 @@ This project prepares and structures EEG data for ADHD analysis.
 
 ## Project files (Current)
 
-- `EegSubject.py`
-  - Defines the `EegSubject` dataclass.
-  - Represents a single EEG recording subject with fields:
-    - `id`: subject identifier
-    - `duration_sec`: recording duration in seconds
-    - `class_label`: ADHD or control label
-    - `n_samples`: number of samples in the recording
-    - `sampling_freq_hz`: sampling frequency of the EEG recording
-    - `file_path`: path to the subject-specific CSV file
 
 - `EegDataset.py`
   - Defines the `EegDataset` dataclass.

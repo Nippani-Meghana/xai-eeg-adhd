@@ -2,6 +2,7 @@
 
 import pandas as pd
 import EegDataset
+import EegSubject
 import os
 
 def _build_subject_csvs(data):
@@ -39,6 +40,7 @@ def _build_subject_index(data, sampling_freq_hz, metadata_path):
     index_df = pd.DataFrame(index_data)
     index_df.to_csv(os.path.join(metadata_path, "nasarbadi_subject_index.csv"), index=False)
     
+   
 
 if __name__ == "__main__":
 
@@ -60,5 +62,7 @@ if __name__ == "__main__":
 
     )
 
-    _build_subject_csvs(data_1)
-    _build_subject_index(data_1, df_1.sampling_freq_hz, df_1.metadata_path)
+
+    #Already done this step, so commenting it out to avoid overwriting existing files.
+    #_build_subject_csvs(data_1)
+    #_build_subject_index(data_1, df_1.sampling_freq_hz, df_1.metadata_path)
